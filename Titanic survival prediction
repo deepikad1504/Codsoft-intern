@@ -1,0 +1,13 @@
+import numpy as np
+import pandas as pd 
+import matplotlib.pyplot as plt
+import seaborn as sns
+df.shape
+df.info()
+df.describe()
+df.isna().sum()
+df[df['Sex']=='male']
+sns.countplot(df,x='Survived') 
+plt.show()
+sns.countplot(df,x='Survived',hue='Sex') #0 - Survived , 1 - Didn't Survived
+plt.show()
